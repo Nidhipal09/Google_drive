@@ -1,0 +1,214 @@
+#addFolder{
+    background-color: aquamarine;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 460px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#addFolder:hover{
+    transform: scale(1.01);
+}
+
+#addTextFile, #addAlbum{
+    background-color: aquamarine;
+    border-radius: 5px;
+    width: 200px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#addTextFile:hover{
+    transform: scale(1.01);
+}
+
+#breadcrumb{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.path{
+    cursor: pointer;
+    background-color: cadetblue;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.path:hover{
+    text-decoration: underline;
+    background-color: white;
+    color: blue;
+}
+
+#container{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.folder{
+    background-color: rgb(228, 215, 99);
+
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.folder [action]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.folder [action=delete]{
+    color: red;
+}
+
+.folder [action=edit]{
+    color: blue;
+}
+
+
+.textFile{
+    background-color: rgb(230, 231, 216);
+
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.textFile [action]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.textFile [action=delete]{
+    color: red;
+}
+
+.textFile [action=edit]{
+    color: blue;
+}
+
+
+
+div[for=name]{
+    margin-top: 70px;
+    /* word-wrap: break-word;  for long names to come line by line within the given width of the folder div
+    height: 30px;
+    overflow: scroll; */
+}
+
+
+
+#app{
+   border: 1px solid black;
+   margin-top: 10px;
+   display: none;
+   height: auto;
+}
+
+#app-title-bar{
+    display: flex;
+    background-color: rgb(0, 152, 212);
+    height: 40px;
+}
+
+#app-title{
+    width: 93%;
+}
+
+#app-menu-bar{
+    display: flex;
+    background-color: rgb(124, 203, 248);
+    height: 40px;
+}
+
+#app-window-actions *{
+    margin-right: 3px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.material-icons:hover{
+    background-color: darkgrey;
+}
+
+#app-body{
+    background-color: rgb(194, 238, 255);
+    height: 260px;
+}
+
+.notepad-body textarea{
+    height: 100%;
+    width: 100%;
+}
+
+.notepad-menu{
+    padding: 5px;
+}
+
+.notepad-menu *{
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.notepad-menu *:hover{
+    transform: scale(1.1);
+}
+
+.notepad-menu span:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.notepad-menu [action=save]{
+    background-color: rgb(124, 203, 248);
+}
+
+.notepad-menu [pressed=true]{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.notepad-menu span,input{
+    vertical-align: bottom;
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+.notepad-menu input[type=color]{
+    width: 25px;
+}
+
+.notepad-menu input[action=upload]{
+    height: 27px;
+    padding: 2px;
+}
+
+.notepad-menu select{
+    height: 25px;
+}
+
+a[for="download"]{
+    display: none;
+}
+
+.notepad-menu input[action=upload]{
+    display: none;
+}
+
+
+
+
+
